@@ -34,6 +34,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
   gem 'pry', '~> 0.12.2'
+  gem 'shoulda-matchers'
 end
 
 group :development do
