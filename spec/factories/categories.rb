@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :category do
-    name { "MyString" }
-    description { "MyText" }
+    name { "Categoria de prueba" }
+    description { "Descripcion de prueba" }
   end
 end
