@@ -28,17 +28,26 @@ RSpec.describe CategoriesController, type: :controller do
     # This should return the minimal set of attributes required to create a valid
     # Category. As you add validations to Category, be sure to
     # adjust the attributes here as well.
+    let(:movies) do
+        [
+            attributes_for(:movie, name: "Pelicula 1", year: 2000),
+            attributes_for(:movie, name: "Pelicula 2", year: 2008)
+        ]
+    end
+
     let(:valid_attributes) do
         {
             name: "Categoria 1",
-            description: "Descripción categoria 1"
+            description: "Descripción categoria 1",
+            movies_attributes: movies
         }
     end
 
     let(:invalid_attributes) do
         {
             name: nil,
-            description: "Descripción categoria"
+            description: "Descripción categoria",
+            movies_attributes: movies
         }
     end
 
@@ -66,8 +75,14 @@ RSpec.describe CategoriesController, type: :controller do
         context "with valid params" do
             it "creates a new Category" do
                 expect {
-                post :create, params: {category: valid_attributes}
+                    post :create, params: {category: valid_attributes}
                 }.to change(Category, :count).by(1)
+            end
+
+            it "creates a new Category increment Movies" do
+                expect {
+                    post :create, params: {category: valid_attributes}
+                }.to change(Movie, :count).by(2)
             end
 
             it "renders a JSON response with the new category" do
