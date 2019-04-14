@@ -35,6 +35,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry', '~> 0.12.2'
   gem 'shoulda-matchers'
+  gem 'active_model_serializers', '~> 0.10.0'
 end
 
 group :development do

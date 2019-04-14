@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :movie do
-    name { "MyString" }
+    sequence(:name) { |n| "Pelicula #{n}" }
     description { "MyString" }
     year { 1 }
     ranking { "MyString" }
