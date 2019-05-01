@@ -18,3 +18,7 @@ gem 'rack-cors'
 ### Bcrypt
 
 * https://github.com/codahale/bcrypt-ruby
+
+* https://scotch.io/tutorials/build-a-restful-json-api-with-rails-5-part-one
+
+* https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
