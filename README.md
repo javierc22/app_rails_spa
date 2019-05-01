@@ -14,3 +14,7 @@ gem 'rack-cors'
 ~~~
 
 * https://github.com/cyu/rack-cors
+
+### Bcrypt
+
+* https://github.com/codahale/bcrypt-ruby
