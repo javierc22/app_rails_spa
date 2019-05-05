@@ -12,7 +12,6 @@ RSpec.describe AuthenticateUser do
         # Contexto con credenciales válidas
         context "when valid credentials" do
             it "returns an auth token" do
-                require "pry"; binding.pry
                 token = valid_auth.call
                 expect(token).not_to be_nil # Espera a que el "token" no sea nulo
             end
