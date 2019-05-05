@@ -35,3 +35,5 @@ gem 'rack-cors'
 * https://medium.com/cedarcode/rails-5-2-credentials-9b3324851336
 
 * https://github.com/nebulab/simple_command
+
+[Pruebas de funcionamiento](Pruebas_json_web_token.md)
