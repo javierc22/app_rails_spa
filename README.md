@@ -27,3 +27,7 @@ gem 'rack-cors'
 * https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
 
 * https://jwt.io/
+
+* https://medium.com/cedarcode/rails-5-2-credentials-9b3324851336
+
+* https://github.com/nebulab/simple_command

@@ -18,6 +18,7 @@ gem 'rack-cors'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 gem 'jwt'
+gem 'simple_command'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
