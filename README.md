@@ -6,6 +6,10 @@
 * https://github.com/thoughtbot/shoulda-matchers
 * https://github.com/rails-api/active_model_serializers/tree/0-10-stable
 
+### Gema Pry-rails
+
+* https://github.com/rweng/pry-rails
+
 
 ### Solucion problema CORS policy: No 'Access-Control-Allow-Origin'
 
